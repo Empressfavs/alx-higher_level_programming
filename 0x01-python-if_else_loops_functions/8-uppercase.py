@@ -3,5 +3,5 @@ def uppercase(str):
     for upper in str:
         if ord(upper) >= 97 and ord(upper) <= 122:
             upper = chr(ord(upper) - 32)
-        print(f"{upper}", end="")
+        print("{}".format(upper), end="")
     print("")
