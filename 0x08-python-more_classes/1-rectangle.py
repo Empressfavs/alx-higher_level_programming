@@ -9,6 +9,9 @@ class Rectangle:
     A rectangle class that shows private instance attribute
     """
     def __init__(self, width=0, height=0):
+        """
+        __init__: Initializes a Square object
+        """
         self.__width = width
         self.__height = height
 
