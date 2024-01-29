@@ -12,8 +12,8 @@ class Rectangle:
         """
         __init__: Initializes a Square object
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
