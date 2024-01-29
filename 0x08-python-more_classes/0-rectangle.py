@@ -6,6 +6,6 @@ class Rectangle: defines empty class
 
 class Rectangle:
     """
-    An empty square class that does nothing
+    An empty rectangle class that does nothing
     """
     pass
