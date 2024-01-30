@@ -49,10 +49,15 @@ class Rectangle:
         if self.width == 0 or self.height == 0:
             my_perimeter = 0
         return my_perimeter
+
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
             return ""
         for i in range(self.__height):
             for j in range(self.__width):
                 print("#", end="")
+            if i != self.__height - 1:
+                print()
         return ""
+
+    def __repr__(self):
