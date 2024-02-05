@@ -14,9 +14,9 @@ class MyList(list):
 
 
 if __name__ == "__main__":
-    my_list = MyList()
+    """my_list = MyList()
     my_list.append(1)
     my_list.append(4)
     my_list.append(2)
     my_list.append(3)
-    my_list.append(5)
+    my_list.append(5)"""
