@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-is_kind_of_class: a function that returns true 
+is_kind_of_class: a function that returns true
 """
 
 
