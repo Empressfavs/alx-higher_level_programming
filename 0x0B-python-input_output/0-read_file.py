@@ -10,5 +10,3 @@ def read_file(filename=""):
     """
     with open(filename, mode="r", encoding="utf-8") as newfile:
         print(newfile.read(), end="")
-
-read_file("try.txt")
