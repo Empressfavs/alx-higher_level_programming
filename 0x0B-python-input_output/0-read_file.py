@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-read_file: reads file in the .txt file"
+read_file: reads file in the .txt file
 """
 
 
