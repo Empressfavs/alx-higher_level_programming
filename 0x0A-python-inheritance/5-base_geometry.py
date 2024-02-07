@@ -1,11 +1,7 @@
 #!/bin/bin/python3
-"""
-BaseGeometry: The class name
-"""
+"""BaseGeometry: The class name"""
 
 
 class BaseGeometry:
-    """
-    A function that returns an empty class
-    """
+    """This represents BaseGeometry"""
     pass
