@@ -9,7 +9,8 @@ from models.base import Base
 
 class Rectangle(Base):
     """
-    A function that calls the super class with id
+    Rectangle class that inherites from Base class
+    and performs its rectangle
     """
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
@@ -24,9 +25,9 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-        if type(value) is not int:
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
-        if value <= 0:
+        elif value <= 0:
             raise ValueError("width must be > 0")
         self.__width = value
 
@@ -36,9 +37,9 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
-        if type(value) is not int:
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
-        if value <= 0:
+        elif value <= 0:
             raise ValueError("height must be > 0")
         self.__height = value
 
@@ -50,7 +51,7 @@ class Rectangle(Base):
     def x(self, value):
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
-        if value < 0:
+        elif value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
 
@@ -62,7 +63,7 @@ class Rectangle(Base):
     def y(self, value):
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
-        if value < 0:
+        elif value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
 
