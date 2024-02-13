@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Rectangle: a class that inherits from base
+Defines Rectangle class inherited from base
 """
 
 
@@ -12,7 +12,18 @@ class Rectangle(Base):
     Rectangle class that inherites from Base class
     and performs its rectangle
     """
+
     def __init__(self, width, height, x=0, y=0, id=None):
+        """Initialization function
+
+        Args:
+            width(int): width of the rectangle
+            height(int): height of the rectangle
+            x(int): space around the width
+            y(int): space around the height
+            id(int): id of the rectangle
+                        increases when another rectangle is added
+        """
         super().__init__(id)
         self.width = width
         self.height = height
@@ -21,10 +32,12 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """getter for width"""
         return self.__width
 
     @width.setter
     def width(self, value):
+        """setter for width"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         elif value <= 0:
@@ -33,10 +46,12 @@ class Rectangle(Base):
 
     @property
     def height(self):
+        """getter for height"""
         return self.__height
 
     @height.setter
     def height(self, value):
+        """setter for height"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         elif value <= 0:
@@ -45,10 +60,12 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        """getter for x"""
         return self.__x
 
     @x.setter
     def x(self, value):
+        """setter for x"""
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
         elif value < 0:
@@ -57,10 +74,12 @@ class Rectangle(Base):
 
     @property
     def y(self):
+        """getter for y"""
         return self.__y
 
     @y.setter
     def y(self, value):
+        """setter for y"""
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
         elif value < 0:
@@ -68,13 +87,5 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
+        """returns the area of the rectangle"""
         return self.__width * self.__height
-
-
-"""
-    def display(self):
-        if self.__width == None or self.__height == None:
-            print("")
-        for x in self.__width:
-            for y in self.__height:
-                print("")"""
