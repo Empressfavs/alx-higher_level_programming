@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 """
 Defines Rectangle class inherited from base
+
+classes:
+    -   Rectangle: class that defines and creates rectangles
+        * Base - superclass
 """
-
-
 from models.base import Base
 
 
