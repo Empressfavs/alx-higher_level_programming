@@ -107,7 +107,7 @@ class Rectangle(Base):
         """
         Update the class Rectangle by overriding the __str__ method
         """
-        return (f"[Rectangle] ({self.id}){self.x}/{self.y} \
+        return (f"[Rectangle] ({self.id}) {self.x}/{self.y} \
 - {self.width}/{self.height}")
 
     def to_dictionary(self):
